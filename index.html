@@ -729,51 +729,24 @@ Niels og Johanne fik andre danskere til at flytte og de etablerede en dansk domi
                     $('#img-q1a1').on('mouseenter', function() {
                         $('#img-q1a1').fadeTo("slow", 0.15);
                         $('#q1a1').slideFadeToggle();
-                        masterslider.api.resume();
+                        $('#q1a2').slideFadeToggle();
+                        $('#q1a3').slideFadeToggle();
                     });
-                });
-                $(function() {
-                    $('#q1a1').on('mouseenter', function() {
+                    $('#img-q1a2').on('mouseenter', function() {
                         $('#img-q1a1').fadeTo("slow", 0.15);
-                        masterslider.api.resume();
+                        $('#q1a1').slideFadeToggle();
+                        $('#q1a2').slideFadeToggle();
+                        $('#q1a3').slideFadeToggle();
                     });
-                });
-
-                $(function() {
-                    $('#img-q1a1').on('mouseleave', function() {
-                        $('#img-q1a1').fadeTo("slow", 1);
-                        masterslider.api.resume();
-                    });
-                });
-                 $(function() {
-                    $('#q1a1').on('mouseout', function() {
+                    $('#img-q1a3').on('mouseenter', function() {
                         $('#img-q1a1').fadeTo("slow", 0.15);
-                        masterslider.api.resume();
+                        $('#q1a1').slideFadeToggle();
+                        $('#q1a2').slideFadeToggle();
+                        $('#q1a3').slideFadeToggle();
                     });
                 });
+                
 
-                $(function() {
-                    $('#img-q1a2').on('mouseover', function() {
-                        $('#q1a2').fadeToggle(400);
-                        masterslider.api.resume();
-                    });
-                });
-
-                $(function() {
-                    $('#img-q1a3').on('mouseover', function() {
-                        $('#q1a1').fadeIn( "slow", function() {
-                            // Animation complete
-                        });
-                        $('#q1a2').fadeIn( "slow", function() {
-                            // Animation complete
-                        });
-                        $('#q1a3').fadeIn( "slow", function() {
-                            // Animation complete
-                        });
-
-                        masterslider.api.resume();
-                    });
-                });
 
                 //Checker hvilket slide der er tale om, og deaktiverer tekst
             $(function() {

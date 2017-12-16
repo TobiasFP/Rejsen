@@ -726,10 +726,28 @@ Niels og Johanne fik andre danskere til at flytte og de etablerede en dansk domi
 
                 //Disse tre funktioner tilføjer tekst når musen rykker over et billede
                 $(function() {
-                    $('#img-q1a1').on('mouseover', function() {
-                        $('#q1a1').fadeIn( "slow", function() {
-    // Animation complete
-  });
+                    $('#img-q1a1').on('mouseenter', function() {
+                        $('#img-q1a1').fadeTo("slow", 0.15);
+                        $('#q1a1').slideFadeToggle();
+                        masterslider.api.resume();
+                    });
+                });
+                $(function() {
+                    $('#q1a1').on('mouseenter', function() {
+                        $('#img-q1a1').fadeTo("slow", 0.15);
+                        masterslider.api.resume();
+                    });
+                });
+
+                $(function() {
+                    $('#img-q1a1').on('mouseleave', function() {
+                        $('#img-q1a1').fadeTo("slow", 1);
+                        masterslider.api.resume();
+                    });
+                });
+                 $(function() {
+                    $('#q1a1').on('mouseout', function() {
+                        $('#img-q1a1').fadeTo("slow", 0.15);
                         masterslider.api.resume();
                     });
                 });
@@ -770,6 +788,11 @@ Niels og Johanne fik andre danskere til at flytte og de etablerede en dansk domi
                     
                 })
             });
+
+
+            $.fn.slideFadeToggle  = function(speed, easing, callback) {
+                return this.animate({opacity: 'toggle', height: 'toggle'}, speed, easing, callback);
+            }; 
             </script>
     </body>
 </html>

@@ -55,3 +55,59 @@
 .msp-cn-1215-86 { background-color:#08c0d2;padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px;font-family:"Poppins";font-weight:normal;font-size:16px;text-align:center;line-height:normal;color:#ffffff; } 
 .msp-cn-1215-87 { background-color:#eab940;padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px;font-family:"Poppins";font-weight:normal;font-size:16px;text-align:center;line-height:normal;color:#ffffff; } 
 .msp-cn-1215-88 { background-color:#14a049;padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px;font-family:"Poppins";font-weight:normal;font-size:16px;text-align:center;line-height:normal;color:#ffffff; } 
+
+
+/* pop-up styles*/
+.messagepop {
+  background-color:#faf3e9;
+  border:1px solid #999999;
+  cursor:default;
+  display:none;
+  position: relative;
+  text-align:left;
+  z-index:50;
+}
+
+#messagepopq5a2 {
+	margin-top: 380px;
+  	margin-left: 500px;
+	width:400px;
+	height:600px;
+	
+}
+#messagepopq5a2a1 {
+	margin-top: 380px;
+  	margin-left: 900px;
+	width:400px;
+	height:600px;
+	background-color:#08bed3;
+	color:#a2ffff;
+	
+	
+}
+
+.popHeader {
+	background-color:#f1e2cd;
+	height:150px;
+	
+	
+}
+.popBody{
+	background-color:#faf3e9;
+	height:400px;
+	
+	
+}
+
+label {
+  display: block;
+  margin-bottom: 3px;
+  padding-left: 15px;
+  text-indent: -15px;
+}
+
+.messagepop p, .messagepop.div {
+  border-bottom: 1px solid #EFEFEF;
+  margin: 8px 0;
+  padding-bottom: 8px;
+}

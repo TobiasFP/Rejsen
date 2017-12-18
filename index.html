@@ -194,6 +194,7 @@
 							<strong>Hvad vil du gøre?</strong></br>
                         </p>
                     </div>
+                    
                     <div class="ms-layer"
                     data-offset-y="100"
                     data-origin="bl"
@@ -232,14 +233,17 @@
                        Niels vil forsøge at få sin egen gård, så Johannes forældre kan acceptere, at hun giver ham sit ja. Han vil forsøge at låne penge til køb af gården. 
                         </p>
                     </div>
+					<!-- Det er vigtigt at have data-action="" med, da musen ser bedre ud herved -->
                     <div class="ms-layer msp-cn-1215-82"
                         id="q1a2"
                         style="width:300px;"
                         data-offset-y="167"
                         data-origin="bc"
+                        data-action=""
                         data-position="normal"
                         data-id="text">
                         <p>Niels vil tage til byen (Randers) og arbejdesom håndværker, for at spare penge til at få sit egen gård.</p>
+                    	
                     </div>
                     <div class="ms-layer msp-cn-1215-79"
                         id="q1a3"
@@ -403,6 +407,7 @@ De får sparet sammen til at rejse på 2. Klasse. </br>
                 </div>
                 <div class="ms-slide" data-delay="5" data-fill-mode="fill" >
                     <img src="images/blank.gif" alt="" title="bg-slide-1" data-src="images/bg-slide-06.jpg" />
+                    
                     <div class="ms-layer msp-cn-1215-83"
                          style="width:500px;"
                          data-effect="t(true,n,50,n,n,n,n,n,n,n,n,n,n,n,n)"
@@ -453,6 +458,29 @@ De får sparet sammen til at rejse på 2. Klasse. </br>
                          data-offset-y="400"
                          data-origin="tl"
                          data-position="normal" />
+                         <div class="ms-layer messagepop pop"
+							id="messagepopq5a2">
+							<div class="popHeader">
+							- Hvad var den gennemsnitlige arbejdstid for en arbejdsmand om dagen i 1860?
+							</div>
+							<div class="popBody">
+							<div id="pop2Svar1">
+							8
+							</div>
+							<div id="pop2Svar2">
+							11
+							</div>
+							<div id="pop2Svar3">
+							13
+							</div>
+							</div>
+							
+						</div>
+						
+						<div class="ms-layer messagepop"
+							id="messagepopq5a2a1">
+							Blablabla							
+						</div>
                     <div class="ms-layer msp-cn-1215-87"
                          style="width:300px;"
                          data-duration="1500"
@@ -465,11 +493,12 @@ De får sparet sammen til at rejse på 2. Klasse. </br>
                          data-position="normal"
                          data-id="text">
                         <p>VALG 1<br>
-                        Niels og Johann vælger at rejse ind på denamerikanske prærie og få gratis land.
+                        Niels og Johann vælger at rejse ind på den amerikanske prærie og få gratis land.
  </p>
                     </div>
                     <div class="ms-layer msp-cn-1215-88"
                          style="width:300px;"
+                         id="q5a2"
                          data-duration="1512"
                          data-delay="3537"
                          data-ease="easeOutQuint"
@@ -479,7 +508,7 @@ De får sparet sammen til at rejse på 2. Klasse. </br>
                          data-position="normal"
                          data-id="text">
                         <p>VALG 2<br>
-                        Niels og Johanne rejsertil Chicago, hvor der er mange danskere.</p>
+                        Niels og Johanne rejser til Chicago, hvor der er mange danskere.</p>
                     </div>
                     <div class="ms-layer msp-cn-1215-86"
                          style="width:300px;"
@@ -772,6 +801,55 @@ Niels og Johanne fik andre danskere til at flytte og de etablerede en dansk domi
             $.fn.slideFadeToggle  = function(speed, easing, callback) {
                 return this.animate({opacity: 'toggle', height: 'toggle'}, speed, easing, callback);
             }; 
+            
+            
+            
+            
+            // Funktioner til pop-up
+            
+            
+            function deselect(e) {
+            	  $('.pop').slideFadeToggle(function() {
+            	    e.removeClass('selected');
+            	  });    
+            	}
+
+            	$(function() {
+            	  $('#q5a2').on('click', function() {
+            	    if($(this).hasClass('selected')) {
+            	      deselect($(this));               
+            	    } else {
+            	      $(this).addClass('selected');
+            	      $('.pop').slideFadeToggle();
+            	    }
+            	    return false;
+            	  });
+
+            	  $('.close').on('click', function() {
+            	    deselect($('#q5a2'));
+            	    return false;
+            	  });
+            	});
+            	
+            	$(function() {
+                	$('#pop2Svar1').on('click', function() {
+                	    if($(this).hasClass('selected')) {
+                	      deselect($(this));               
+                	    } else {
+                	      $(this).addClass('selected');
+                	      $('#messagepopq5a2a1').slideFadeToggle();
+                	    }
+                	    return false;
+                	  });
+
+                	  $('.close').on('click', function() {
+                	    deselect($('#q5a2'));
+                	    return false;
+                	  });
+                	});
+            	
+            	
+            	
             </script>
     </body>
 </html>

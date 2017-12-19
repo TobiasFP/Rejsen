@@ -66,8 +66,8 @@
 	position: relative;
 	text-align:left;
 	z-index:50;
-	width:501px;
-	height:565px;
+	width: 40%;
+	height: 30%;
 	
 }
 
@@ -91,7 +91,7 @@
 
 .popHeader {
 	background-color: #f0e3cd;
-	height:150px;
+	height: 30%;
 	padding: 50px 50px 50px 50px;
 	color:#23211d;
 	font-family: "open sans narrow";
@@ -101,7 +101,7 @@
 }
 .popBody {
 	background-color:#faf3e9;
-	height:400px;
+	height: 80%;
 	padding: 50px 50px 50px 50px;
 	color:#23211d;
 	font-family: "open sans narrow";

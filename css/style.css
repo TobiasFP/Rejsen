@@ -59,20 +59,22 @@
 
 /* pop-up styles*/
 .messagepop {
-  background-color:#faf3e9;
-  border:1px solid #999999;
-  cursor:default;
-  display:none;
-  position: relative;
-  text-align:left;
-  z-index:50;
+	background-color:#faf3e9;
+	border:1px solid #999999;
+	cursor:default;
+	display:none;
+	position: relative;
+	text-align:left;
+	z-index:50;
+	width:501px;
+	height:565px;
+	
 }
 
 #messagepopq5a2 {
-	margin-top: 380px;
-  	margin-left: 500px;
-	width:400px;
-	height:600px;
+	margin-top: 340px;
+  	margin-left: 450px;
+	
 	
 }
 #messagepopq5a2a1 {
@@ -84,20 +86,32 @@
 	color:#a2ffff;
 	
 	
+	
 }
 
 .popHeader {
-	background-color:#f1e2cd;
+	background-color: #f0e3cd;
 	height:150px;
+	padding: 50px 50px 50px 50px;
+	color:#23211d;
+	font-family: "open sans narrow";
+	font-size: 32px;
 	
 	
 }
-.popBody{
+.popBody {
 	background-color:#faf3e9;
 	height:400px;
-	
+	padding: 50px 50px 50px 50px;
+	color:#23211d;
+	font-family: "open sans narrow";
+	font-size: 40px;
 	
 }
+
+.popAns:hover {
+	background-color: #08bfd2;
+	}
 
 label { 
   display: block;

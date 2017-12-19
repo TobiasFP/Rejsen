@@ -194,69 +194,41 @@
 							<strong>Hvad vil du gøre?</strong></br>
                         </p>
                     </div>
-                    
-                    <div class="ms-layer"
+                    <div class="ms-layer layer-q1a1"
                     data-offset-y="100"
                     data-origin="bl"
                     data-position="normal"
                     >
-                        <img src="images/q1a1.jpg" id="img-q1a1" />
+                    
+                    
+                        <img src="images/q1a1.jpg" id="img-q1a1">
+                        <!-- Det er vigtigt at have data-action="" med, da musen ser bedre ud herved -->
+                    
+                        <div data-action="" class="text-overlay msp-cn-1215-81" id="q1a1">Niels vil forsøge at få sin egen gård, så Johannes forældre kan acceptere, at hun giver ham sit ja. Han vil forsøge at låne penge til køb af gården. </div>
                     </div>
                     
-                    <div class="ms-layer imgContainer"
+                    <div class="ms-layer layer-q1a2"
                     data-offset-y="100"
                     data-offset-x="13"
                     data-origin="bc"
                     data-position="normal"
                     >
                         <img src="images/q1a2.jpg" id="img-q1a2" />
+                        <div data-action="" class="text-overlay msp-cn-1215-82" id="q1a2"><p>Niels vil tage til byen (Randers) og arbejdesom håndværker, for at spare penge til at få sit egen gård.</p></div>
                     </div>
                     
-                    <div class="ms-layer imgContainer"
+                    <div class="ms-layer layer-q1a3"
                     data-offset-y="100"
                     data-origin="br"
                     data-position="normal"
                     >
-                        <img src="images/q1a3.jpg" id="img-q1a3" />
-
+                        <img src="images/q1a3.jpg" id="img-q1a3" style="width:100%;">
+						<div data-action="gotoSlide(3)" class="text-overlay msp-cn-1215-79" id="q1a3"><p>Niels vælger at rejse til Amerika og frier til Johanne, som han ønsker at få med sig.</p></div>
                     </div>
                    
-                    <div class="ms-layer msp-cn-1215-81"
-                        id="q1a1"
-                        style="width:300px; visibility:'hidden',display:'none';"
-                        data-offset-y="140"
-                        data-offset-x="35"
-                        data-origin = "bl"
-                        data-position="normal"
-                        data-id="text">
-                        <p>
-                       Niels vil forsøge at få sin egen gård, så Johannes forældre kan acceptere, at hun giver ham sit ja. Han vil forsøge at låne penge til køb af gården. 
-                        </p>
-                    </div>
-					<!-- Det er vigtigt at have data-action="" med, da musen ser bedre ud herved -->
-                    <div class="ms-layer msp-cn-1215-82"
-                        id="q1a2"
-                        style="width:300px;"
-                        data-offset-y="167"
-                        data-origin="bc"
-                        data-action=""
-                        data-position="normal"
-                        data-id="text">
-                        <p>Niels vil tage til byen (Randers) og arbejdesom håndværker, for at spare penge til at få sit egen gård.</p>
-                    	
-                    </div>
-                    <div class="ms-layer msp-cn-1215-79"
-                        id="q1a3"
-                        style="width:300px;"
-			            data-action="gotoSlide(3)"
-                        data-offset-y="167"
-                        data-offset-x="35"
-                        data-origin="br"
-                        data-hide-time="0" 
-                        data-hide-duration="2000"         
-                        >
-                        <p>Niels vælger at rejse til Amerika og frier til Johanne, som han ønsker at få med sig.</p>
-                    </div>
+                    
+					
+                    
                 </div>
                 <div class="ms-slide" data-delay="5" data-fill-mode="fill" >
                     <img src="images/blank.gif" alt="" title="bg-slide-1" data-src="images/bg-slide-04.jpg" />
@@ -747,109 +719,6 @@ Niels og Johanne fik andre danskere til at flytte og de etablerede en dansk domi
 
 						MSScrollParallax.setup( masterslider, 30, 50, true );		</script>
 
-
-            <script>
-
-
-                //Alle Tobias funktioner ligger her
-
-                //Disse tre funktioner tilføjer tekst når musen rykker over et billede
-                $(function() {
-                    $('#img-q1a1').on('mouseenter', function() {
-                        $('#img-q1a1').fadeTo("slow", 0.15);
-                        $('#img-q1a2').fadeTo("slow", 0.15);
-                        $('#img-q1a3').fadeTo("slow", 0.15);
-                        $('#q1a1').slideFadeToggle();
-                        $('#q1a2').slideFadeToggle();
-                        $('#q1a3').slideFadeToggle();
-                    });
-                    $('#img-q1a2').on('mouseenter', function() {
-                        $('#img-q1a1').fadeTo("slow", 0.15);
-                        $('#img-q1a2').fadeTo("slow", 0.15);
-                        $('#img-q1a3').fadeTo("slow", 0.15);
-                        $('#q1a1').slideFadeToggle();
-                        $('#q1a2').slideFadeToggle();
-                        $('#q1a3').slideFadeToggle();
-                    });
-                    $('#img-q1a3').on('mouseenter', function() {
-                        $('#img-q1a1').fadeTo("slow", 0.15);
-                        $('#img-q1a2').fadeTo("slow", 0.15);
-                        $('#img-q1a3').fadeTo("slow", 0.15);
-                        $('#q1a1').slideFadeToggle();
-                        $('#q1a2').slideFadeToggle();
-                        $('#q1a3').slideFadeToggle();
-                    });
-                });
-                
-
-
-                //Checker hvilket slide der er tale om, og deaktiverer tekst
-            $(function() {
-               masterslider.api.addEventListener(MSSliderEvent.WAITING , function(){
-                    if(masterslider.api.index() == 1 )
-                    {
-                        
-                        $('#q1a1').delay( 80 ).fadeToggle(400);
-                        $('#q1a2').delay( 80 ).fadeToggle(400);
-                        $('#q1a3').delay( 80 ).fadeToggle(400);
-                    }
-                    
-                })
-            });
-
-
-            $.fn.slideFadeToggle  = function(speed, easing, callback) {
-                return this.animate({opacity: 'toggle', height: 'toggle'}, speed, easing, callback);
-            }; 
-            
-            
-            
-            
-            // Funktioner til pop-up
-            
-            
-            function deselect(e) {
-            	  $('.pop').slideFadeToggle(function() {
-            	    e.removeClass('selected');
-            	  });    
-            	}
-
-            	$(function() {
-            	  $('#q5a2').on('click', function() {
-            	    if($(this).hasClass('selected')) {
-            	      deselect($(this));               
-            	    } else {
-            	      $(this).addClass('selected');
-            	      $('.pop').slideFadeToggle();
-            	    }
-            	    return false;
-            	  });
-
-            	  $('.close').on('click', function() {
-            	    deselect($('#q5a2'));
-            	    return false;
-            	  });
-            	});
-            	
-            	$(function() {
-                	$('#pop2Svar1').on('click', function() {
-                	    if($(this).hasClass('selected')) {
-                	      deselect($(this));               
-                	    } else {
-                	      $(this).addClass('selected');
-                	      $('#messagepopq5a2a1').slideFadeToggle();
-                	    }
-                	    return false;
-                	  });
-
-                	  $('.close').on('click', function() {
-                	    deselect($('#q5a2'));
-                	    return false;
-                	  });
-                	});
-            	
-            	
-            	
-            </script>
+		 <script src="js/effect.js"></script>
     </body>
 </html>

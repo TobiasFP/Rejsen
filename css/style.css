@@ -46,9 +46,9 @@
 .msp-cn-1215-74 { font-family:"Poppins";font-weight:normal;font-size:24px;text-align:center;line-height:normal;white-space:nowrap;color:#ffffff; } 
 .msp-cn-1215-75 { font-family:"Poppins";font-weight:normal;font-size:12px;text-align:center;line-height:normal;color:#ffffff; } 
 .msp-cn-1215-76 { background-color:#ffcd61;font-weight:normal;line-height:normal; } 
-.msp-cn-1215-79 { background-color:#08c0d2;padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px;font-family:"Poppins";font-weight:normal;font-size:16px;text-align:center;line-height:normal;color:#ffffff; } 
-.msp-cn-1215-81 { background-color:#eab940;padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px;font-family:"Poppins";font-weight:normal;font-size:16px;text-align:center;line-height:normal;color:#ffffff; } 
-.msp-cn-1215-82 { background-color:#14a049;padding-top:30px;padding-right:30px;padding-bottom:30px;padding-left:30px;font-family:"Poppins";font-weight:normal;font-size:16px;text-align:center;line-height:normal;color:#ffffff; } 
+.msp-cn-1215-79 { background-color:#08c0d2;font-family:"Poppins";font-weight:normal;font-size:16px;text-align:center;line-height:normal;color:#ffffff; } 
+.msp-cn-1215-81 { background-color:#eab940;font-family:"Poppins";font-weight:normal;font-size:16px;text-align:center;line-height:normal;color:#ffffff; } 
+.msp-cn-1215-82 { background-color:#14a049;font-family:"Poppins";font-weight:normal;font-size:16px;text-align:center;line-height:normal;color:#ffffff; } 
 .msp-cn-1215-83 { font-family:"Poppins";font-weight:normal;font-size:24px;text-align:center;line-height:normal;white-space:nowrap;color:#ffffff; } 
 .msp-cn-1215-84 { font-family:"Poppins";font-weight:normal;font-size:12px;text-align:center;line-height:normal;color:#ffffff; } 
 .msp-cn-1215-85 { background-color:#ffcd61;font-weight:normal;line-height:normal; } 
@@ -110,4 +110,13 @@ label {
   border-bottom: 1px solid #EFEFEF;
   margin: 8px 0;
   padding-bottom: 8px;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width:100%;
+  	height:100%;
 }

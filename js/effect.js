@@ -146,6 +146,8 @@
             	
             	
         	//Step 4: lav ekstra overlay til forkerte svar
+            //Ikke kommenteret endnu, og mangler lige det sidste fix.. 
+            
             	$(function() {
                 	$('#messagepopq5a2a1').on('click', function() {
                 	    

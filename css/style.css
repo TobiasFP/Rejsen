@@ -77,17 +77,23 @@
 	
 	
 }
-#messagepopq5a2a1 {
-	margin-top: 380px;
-  	margin-left: 900px;
-	width:400px;
-	height:600px;
-	background-color:#08bed3;
-	color:#a2ffff;
-	
-	
-	
+
+.leftpop {
+	margin-top: 340px;
+  	margin-left: 0px;
 }
+
+.centerpop {
+	margin-top: 340px;
+  	margin-left: 450px;
+}
+
+.rightpop {
+	margin-top: 340px;
+  	margin-left: 900px;
+}
+
+
 
 .popHeader {
 	background-color: #f0e3cd;

@@ -63,34 +63,14 @@
 	border:1px solid #999999;
 	cursor:default;
 	display:none;
-	position: relative;
-	text-align:left;
 	z-index:50;
-	width: 40%;
-	height: 30%;
-	
+		
 }
 
-#messagepopq5a2 {
-	margin-top: 340px;
-  	margin-left: 450px;
-	
-	
-}
-
-.leftpop {
-	margin-top: 340px;
-  	margin-left: 0px;
-}
-
-.centerpop {
-	margin-top: 340px;
-  	margin-left: 450px;
-}
-
-.rightpop {
-	margin-top: 340px;
-  	margin-left: 900px;
+.pop {
+	width:33%;
+	margin-top:300px;
+  	margin-bottom: 20px;
 }
 
 
@@ -98,26 +78,49 @@
 .popHeader {
 	background-color: #f0e3cd;
 	height: 40%;
-	padding: 10px 50px 50px 50px;
+	padding: 10px 50px 0px 50px;
 	color:#23211d;
 	font-family: "open sans narrow";
 	font-size: 32px;
+	line-height: 40px;
 	
 	
 }
 .popBody {
 	background-color:#faf3e9;
-	height: 80%;
-	padding: 50px 50px 50px 50px;
+	
+	padding: 50px 50px 0px 50px;
 	color:#23211d;
 	font-family: "open sans narrow";
 	font-size: 40px;
+	line-height: 40px;
 	
 }
 
 .popAns:hover {
 	background-color: #08bfd2;
 	}
+
+
+/*Layer and IMG styles*/
+.imgs {
+	width:100%;
+	object-fit: fill;
+	
+}
+
+.layer-img-left {
+	width: 33%;
+}
+
+.layer-img-center {
+	width: 33%;
+}
+
+.layer-img-right {
+	width: 33%;
+}
+
 
 label { 
   display: block;
@@ -128,8 +131,7 @@ label {
 
 .messagepop p, .messagepop.div {
   border-bottom: 1px solid #EFEFEF;
-  margin: 8px 0;
-  padding-bottom: 8px;
+  
 }
 
 .text-overlay {

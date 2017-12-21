@@ -203,27 +203,28 @@
 							<strong>Hvad vil du gøre?</strong></br>
                         </p>
                     </div>
-                    <div class="ms-layer layer-q2a1"
+                    <div class="ms-layer layer-q2a1 layer-img-left"
                     id="lay-q2a1"
-                    data-offset-y="100"
+                    data-offset-y="0"
                     data-origin="bl"
                     data-position="normal"
                     data-action=""
                     >
                     
                     
-                        <img src="images/q1a1.jpg" id="img-q2a1">
+                        <img src="images/q2a1.jpg" id="img-q2a1" class="imgs">
                         <!-- Det er vigtigt at have data-action="" med, da musen ser bedre ud herved -->
                     
                         <div class="text-overlay msp-cn-1215-81" 
-                        data-action="" 
+                        
                         id="q2a1"> 
                         	<p class="p-text-overlay">
                         		Niels vil forsøge at få sin egen gård, så Johannes forældre kan acceptere, at hun giver ham sit ja. Han vil forsøge at låne penge til køb af gården. 
                        		</p>
                      	</div>
                      	<div class="ms-layer messagepop pop leftpop"
-							id="messagepopq2a1">
+							id="messagepopq2a1"
+							data-origin="bl">
 							<div class="popHeader">
 							Pop-Quiz
 							</div>
@@ -242,23 +243,31 @@
 						</div>
                     </div>
                     
-                    <div class="ms-layer layer-q2a2"
+                    <div class="ms-layer layer-q2a2 layer-img-center"
                     id="lay-q2a2"
-                    data-offset-y="100"
-                    data-offset-x="13"
+                    data-offset-y="0"
+                    data-offset-x="0"
                     data-origin="bc"
                     data-position="normal"
                     data-action=""
                     >
                     	<!-- Obs: Billede skal omdøbes -->
-                        <img src="images/q1a2.jpg" id="img-q2a2" />
-                        <div data-action="" class="text-overlay msp-cn-1215-82" id="q2a2"><p class="p-text-overlay">Niels vil tage til byen (Randers) og arbejdesom håndværker, for at spare penge til at få sit egen gård.</p>
+                        <img src="images/q2a2.jpg" id="img-q2a2" class="imgs" />
+                        <div 
+                        data-action="" 
+                        data-origin="bc"
+                        class="text-overlay msp-cn-1215-82" 
+                        id="q2a2">
+                        	<p class="p-text-overlay">
+                        		Niels vil tage til byen (Randers) og arbejdesom håndværker, for at spare penge til at få sit egen gård.
+                       		</p>
                         </div>
                    	
                    	<div class="ms-layer messagepop pop centerpop"
-							id="messagepopq2a2">
+							id="messagepopq2a2"
+							data-origin="bc">
 							<div class="popHeader">
-							Pop-Quiz - center
+							Pop-Quiz - center - blablaBLALASFLSFASDLGSDLFA ALFASLFDA SLFASL 
 							</div>
 							<div class="popBody">
 							<div class="popAns" id="pop2Svar1">
@@ -276,14 +285,14 @@
                    	
                    	</div>
                     
-                    <div class="ms-layer layer-q2a3"
+                    <div class="ms-layer layer-q2a3 layer-img-right"
                     id="lay-q2a3"
-                    data-offset-y="100"
+                    data-offset-y="0"
                     data-origin="br"
                     data-position="normal"
                     data-action="gotoSlide(3)"
                     >
-                        <img src="images/q1a3.jpg" id="img-q1a3" style="width:100%;">
+                        <img src="images/q2a3.jpg" id="img-q1a3" class="imgs">
 						<div  
 						class="text-overlay msp-cn-1215-79" 
 						id="q2a3">
@@ -294,7 +303,8 @@
 						</div>
 						
 						<div class="ms-layer messagepop pop rightpop"
-							id="messagepopq2a3">
+							id="messagepopq2a3"
+							data-origin="br">
 							<div class="popHeader">
 							Pop-Quiz - RIGHT
 							</div>
@@ -302,9 +312,11 @@
 							<div class="popAns" id="pop2Svar1">
 							8
 							</div>
+							<br />
 							<div class="popAns" id="pop2Svar2">
 							11
 							</div>
+							<br />
 							<div class="popAns" id="pop2Svar3">
 							13
 							</div>
@@ -787,8 +799,8 @@ Niels og Johanne fik andre danskere til at flytte og de etablerede en dansk domi
 			masterslider.control('bullets'    ,{ autohide:true, overVideo:true, dir:'v', align:'right', space:6 , margin:30  });
 			// slider setup
 			masterslider.setup("masterslider", {
-				width           : 1366,
-				height          : 768,
+				width           : 1368,
+				height          : 720,
 				minHeight       : 0,
 				space           : 0,
 				start           : 1,
@@ -796,7 +808,7 @@ Niels og Johanne fik andre danskere til at flytte og de etablerede en dansk domi
 				swipe           : true,
 				mouse           : true,
 				keyboard        : true,
-				layout          : "fullwidth",
+				layout          : "fullscreen",
 				wheel           : true,
 				autoplay        : false,
 				instantStartLayers:true,
